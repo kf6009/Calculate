@@ -5,7 +5,7 @@
     <stringAttribute key="distributedNetworkInterface" value="10.160.95.84"/>
     <intAttribute key="distributedNodesCount" value="1"/>
     <stringAttribute key="distributedTLC" value="off"/>
-    <intAttribute key="fpIndex" value="31"/>
+    <intAttribute key="fpIndex" value="104"/>
     <intAttribute key="maxHeapSize" value="25"/>
     <stringAttribute key="modelBehaviorInit" value=""/>
     <stringAttribute key="modelBehaviorNext" value=""/>
@@ -16,10 +16,10 @@
     <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
     <listAttribute key="modelCorrectnessInvariants"/>
     <listAttribute key="modelCorrectnessProperties"/>
-    <stringAttribute key="modelExpressionEval" value="(S \subseteq T) &lt;=&gt; (S\T = {})"/>
+    <stringAttribute key="modelExpressionEval" value="{x*x*x : x \in { y \in S : 4 \leq y /\ y \leq 6}}"/>
     <listAttribute key="modelParameterConstants">
-        <listEntry value="S;;{&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;};0;0"/>
-        <listEntry value="T;;{&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;};0;0"/>
+        <listEntry value="S;;1 .. 8;0;0"/>
+        <listEntry value="T;;1 .. 8;0;0"/>
     </listAttribute>
     <intAttribute key="numberOfWorkers" value="4"/>
     <stringAttribute key="result.mail.address" value=""/>

@@ -1,5 +1,5 @@
 ----------------------------- MODULE Calculate -----------------------------
-
+EXTENDS Naturals
 (* Logic tautologies to test
    Paste into "Evaluate Constant Expression" box in "Model Checking Results"
    \A F,G \in BOOLEAN : (F=>G) /\ (G=>F) <=> (F<=>G)
@@ -18,7 +18,14 @@ CONSTANT S,T
     (S = T) <=> (S \subseteq T) /\ (T \subseteq S)
     (S \subseteq T) <=> (S\T = {})
 *)
+
+(* Natural numbers:
+    {x \in S : 2 \leq x /\ x \leq 6}
+    {x \in S : x%3 = 1}
+    {x*x : x \in S}
+    {x*x*x : x \in { y \in S : 4 \leq y /\ y \leq 6}}
+*)
 =============================================================================
 \* Modification History
-\* Last modified Wed Oct 02 11:39:53 BST 2019 by alun
+\* Last modified Wed Oct 02 11:47:20 BST 2019 by alun
 \* Created Wed Oct 02 11:23:19 BST 2019 by alun
