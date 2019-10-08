@@ -3,7 +3,8 @@
 (* Logic tautologies to test
    Paste into "Evaluate Constant Expression" box in "Model Checking Results"
    \A F,G \in BOOLEAN : (F=>G) /\ (G=>F) <=> (F<=>G)
-   \A F,G \in BOOLEAN : (~F/\~G)<=>(~F) \/ (~G)  \* DeMorgan's law
+   \A F,G \in BOOLEAN : ~(F/\G)<=>(~F) \/ (~G)  \* DeMorgan's law
+   \A F,G \in BOOLEAN : ~(F\/G)<=>(~F) /\ (~G)  \* DeMorgan's law
    \A F,G \in BOOLEAN : F => (F => G)
    \A F,G \in BOOLEAN : (F => G) <=> (~G => ~F)
    
