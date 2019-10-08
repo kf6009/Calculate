@@ -2,24 +2,24 @@
 EXTENDS Calculate, TLC
 
 \* CONSTANT definitions @modelParameterConstants:0S
-const_1570013225891160000 == 
+const_15705364202505000 == 
 1 .. 8
 ----
 
 \* CONSTANT definitions @modelParameterConstants:1T
-const_1570013225891161000 == 
+const_15705364202506000 == 
 1 .. 8
 ----
 
 \* Constant expression definition @modelExpressionEval
-const_expr_1570013225891162000 == 
-{x*x*x : x \in { y \in S : 4 \leq y /\ y \leq 6}}
+const_expr_15705364202507000 == 
+\A F,G \in BOOLEAN : ~(F/\G) <=> (~F) \/ (~G) 
 ----
 
 \* Constant expression ASSUME statement @modelExpressionEval
-ASSUME PrintT(<<"$!@$!@$!@$!@$!",const_expr_1570013225891162000>>)
+ASSUME PrintT(<<"$!@$!@$!@$!@$!",const_expr_15705364202507000>>)
 ----
 
 =============================================================================
 \* Modification History
-\* Created Wed Oct 02 11:47:05 BST 2019 by alun
+\* Created Tue Oct 08 13:07:00 BST 2019 by alun

@@ -23,8 +23,9 @@ CONSTANT S,T
     {x \in S : 2 \leq x /\ x \leq 6}
     {x \in S : x%3 = 1}
     {x*x : x \in S}
+    {x*x*x : x \in { y \in S : 4 \leq y /\ y \leq 6}}
 *)
 =============================================================================
 \* Modification History
-\* Last modified Wed Oct 02 11:46:05 BST 2019 by alun
+\* Last modified Wed Oct 02 11:47:20 BST 2019 by alun
 \* Created Wed Oct 02 11:23:19 BST 2019 by alun

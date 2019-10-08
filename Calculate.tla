@@ -3,7 +3,8 @@ EXTENDS Naturals
 (* Logic tautologies to test
    Paste into "Evaluate Constant Expression" box in "Model Checking Results"
    \A F,G \in BOOLEAN : (F=>G) /\ (G=>F) <=> (F<=>G)
-   \A F,G \in BOOLEAN : (~F/\~G)<=>(~F) \/ (~G)  \* DeMorgan's law
+   \A F,G \in BOOLEAN : ~(F/\G)<=>(~F) \/ (~G)  \* DeMorgan's law
+   \A F,G \in BOOLEAN : ~(F\/G)<=>(~F) /\ (~G)  \* DeMorgan's law
    \A F,G \in BOOLEAN : F => (F => G)
    \A F,G \in BOOLEAN : (F => G) <=> (~G => ~F)
    
@@ -27,5 +28,5 @@ CONSTANT S,T
 *)
 =============================================================================
 \* Modification History
-\* Last modified Wed Oct 02 11:47:20 BST 2019 by alun
+\* Last modified Tue Oct 08 13:07:35 BST 2019 by alun
 \* Created Wed Oct 02 11:23:19 BST 2019 by alun
